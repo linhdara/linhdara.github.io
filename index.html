@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Gym web </title>
+	
+		<script src="jquery-3.5.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/peerjs@0.3.20/dist/peer.min.js"></script>
+		<script src="socket.io.dev.js"></script>
+	</head>
+	<body>
+	<div id="div-chat">
+		<p>Online user:</p>
+		<ul id="ulUser"></ul>
+		<h3 id="my-peer">Your ID:</h3>
+		<video id="localStream" width="300" controls></video>
+		<br /><br />
+		<video id="remoteStream" width="300" controls></video>
+		<br /><br />
+		<input type="text" id ="remoteId" placeholder="Remote ID">
+		<button id="btnCall">Call</button>
+	</div>
+	<div id="div-signUp">
+		<br /><br />
+		<input type="text" id ="txtUsername" placeholder="Enter your user name">
+		<button id="btnSignUp">Sign up</button>
+	</div>
+	</body>
+	<script src="WebRTC.js"></script>
